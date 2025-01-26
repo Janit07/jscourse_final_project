@@ -1,0 +1,230 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #333; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav h1 {
+    color: white; 
+    font-size: 24px;
+    margin: 0;
+    text-align: left; 
+}
+
+
+nav ul {
+    list-style: none; 
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    background-color: #4CAF50; 
+    border-radius: 4px; 
+}
+
+nav ul li input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+nav ul li input:focus {
+    outline: none;
+    border-color: #4CAF50; 
+}
+
+nav ul li button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+nav ul li button:hover {
+    background-color: #45a049; 
+}
+
+#btnClear {
+    background-color: #f44336; 
+}
+
+#btnClear:hover {
+    background-color: #e53935; 
+}
+  /* Basic CSS for the form elements */
+  body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #4cafa7;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4cafa7;
+  }
+  
+  /* Basic CSS for the report section */
+  h2 {
+    margin-top: 30px;
+  }
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkslogo{
+    color: #0a0a0a;
+    transition: .3s ease-out;
+}
+
+
+.linkslogo:hover{
+    color: gold;
+}
+
+.verticalline{
+    width: 2px;
+    height: 18rem;
+    background-color: #080808;
+    border-radius: 2px;
+    margin-bottom: 5rem;
+}
+.sociallinks a{
+    margin-bottom: 1.5rem;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sociallinks{
+    position: fixed;
+    bottom: 0;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s ease-out;
+    
+}
+
+
+.mainhomecontent{
+    padding: 5rem 2rem;
+}
+
+.homesectionheader{
+    font-size: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0c0c0c;
+    font-weight: bolder;
+    line-height: 5rem;
+}
+
+.homesectiondescriptoin{
+    color: #080808;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+  
+ #result {
+    position: fixed; 
+    top: 100px; 
+    right: 20px; 
+    width: 300px; 
+    max-height: 80%; 
+    overflow-y: auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+#result h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#result img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+}
+#result p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}

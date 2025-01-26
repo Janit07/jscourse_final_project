@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			
+			<title>Contact Us</title>
+			<link rel="stylesheet" href="./travel_recommendation.css">
+			<style>
+			body{
+				
+			}
+			#contactForm {
+                    		position: absolute;
+                    		top: 50%;
+                    		right: 10%;
+                    		transform: translateY(-50%);
+                    		padding: 20px;
+                    		background-color: #f9f9f9;
+                    		border: 1px solid #ccc;
+                    		border-radius: 8px;
+	        		        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    		width: 300px; /* Adjust the width of the form */
+                    		transition: transform 0.3s ease-in-out;
+            	       }
+            		#contactForm input,
+            		#contactForm textarea {
+                    		width: 100%;
+                    		padding: 10px;
+                    		margin: 10px 0;
+                    		border: 1px solid #ccc;
+                    		border-radius: 4px;
+                    		box-sizing: border-box;
+                    		transition: border 0.3s ease-in-out;
+            		}
+            		#contactForm input:focus,
+            		#contactForm textarea:focus {
+                    		border-color: #4CAF50;
+                    		outline: none;
+            		}
+            		#contactForm button {
+                    		width: 100%;
+                    		padding: 12px;
+                    		background-color: #4CAF50;
+                    		color: white;
+                    		border: none;
+                    		border-radius: 4px;
+                    		cursor: pointer;
+                    		transition: background-color 0.3s ease-in-out;
+            		}
+            		#contactForm button:hover {
+                    		background-color: #45a049;
+            		}
+            		#contactForm button:focus {
+                    		outline: none;
+            		}
+                    h2{
+                        font-size: 5rem;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
+                        color: #0c0c0c;
+                        font-weight: bolder;
+                        line-height: 5rem;
+                    }
+                    p{
+                        color: #080808;
+                        margin-top: 2rem;
+                        font-size: 1.2rem;
+                    }
+			</style>
+		</head>
+		<body>
+			<nav><h1>Wonderer</h1>
+				<ul>
+					<li><a href="./index.html" id="home">Home</a></li>
+                    <li><a href="./travel_aboutus.html" id="aboutus">About Us</a></li>
+					<li><a href="./travel_contact.html" id ="contact">Contact Us</a></li>
+				</ul>
+			</nav>
+			<h2>Contact Us</h2>
+			<p>Get In Touch.</p>
+			
+			<form id="contactForm">
+					<div>
+						<label for ="name">Name</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" row="5" required></textarea>
+					</div>
+					<button type="submit" onclick="thankyou()">Submit</button>
+			</form>
+			<script>
+				function thankyou(){
+					alert('Thank you for contacting us!');
+				}
+			</script>
+		</body>
+		
+</html>
