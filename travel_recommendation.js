@@ -61,6 +61,6 @@ function searchDestination() {
 btnSearch.addEventListener('click',searchDestination);
 
 btnClear.addEventListener('click', () => {
-            document.getElementById('destination').innerHTML='';
+            document.getElementById('destination').value='';
     document.getElementById('result').innerHTML = '';
 });
